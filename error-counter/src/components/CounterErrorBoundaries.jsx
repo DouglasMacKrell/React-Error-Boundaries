@@ -15,9 +15,9 @@ class CounterErrorBoundaries extends React.Component {
       return (
         <div>
           <iframe
-            src="https://giphy.com/embed/26uf6qaxqHpYXgjWU"
+            src="https://giphy.com/embed/f6JH3qn4W8iL3tN0E8"
             width="480"
-            height="261"
+            height="270"
             frameBorder="0"
             class="giphy-embed"
             allowFullScreen

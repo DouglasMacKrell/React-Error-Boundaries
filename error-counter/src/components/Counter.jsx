@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
 export default () => {
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(0);
 
-  //   if (count > 0 && count % 5 === 0) {
-  //     throw Error("Wonky count!");
-  //   }
+    if (count > 0 && count % 5 === 0) {
+      throw Error("Oops! All Errors!");
+    }
 
-  const handleChange = () => {
-    setCount(prevCount => prevCount + 5);
-    setCount(prevCount => prevCount + 5);
-    setCount(prevCount => prevCount + 5);
-  };
+//   const handleChange = () => {
+//     setCount(prevCount => prevCount + 5);
+//     setCount(prevCount => prevCount + 5);
+//     setCount(prevCount => prevCount + 5);
+//   };
 
   return (
     <div>
@@ -23,7 +23,7 @@ export default () => {
       <button onClick={() => setCount((prevCount) => prevCount + 2)}>
         Add Two
       </button>
-      <button onClick={handleChange}>My Special Button</button>
+      {/* <button onClick={handleChange}>My Special Button</button> */}
     </div>
   );
 };
